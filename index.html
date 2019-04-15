@@ -1,58 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Techninė užduotis">
-    <meta name="keywords" content="HTML,CSS,JavaScript">
-    <meta name="author" content="Karolis Mackevičius">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>NTPROJECT</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Techninė užduotis">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Karolis Mackevičius">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  </head>
-  <body>
+  <link rel="stylesheet" href="css/styles.css">
 
-    <div class="topnav sticky" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
 
-    <div style="padding-left:16px">
-      <h2>Responsive Topnav Example</h2>
-      <p>Resize the browser window to see how it works.</p>
-    </div>
+  <!-- Just a font for responsive BURGER-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Owl Carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
 
-    <div class="content">
-  <h3>On Scroll Sticky Header</h3>
-  <p>The header will stick to the top when you reach its scroll position.</p>
-  <p>Scroll back up to remove the sticky effect.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 
-  </body>
+
+  <title>NTPROJECT</title>
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+
+      <div class="logo">
+        NTPROJECT
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#">Pradžia</a></li>
+          <li><a href="#">Pasiūlymai</a></li>
+          <li><a href="#">Naujienos</a></li>
+          <li><a href="#">Kontaktai</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="background">
+      <h1>Lorem ipsum dolor</br>sit amet conset</h1>
+      <div class="box"></div>
+      <div id="owl-example" class="owl-carousel">
+
+        <div>
+          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <div class="card-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
+          </div>
+        </div>
+
+        <div>
+          <img class="front-image"src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <div class="card-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <div class="card-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <div class="card-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
+          </div>
+        </div>
+
+
+        <div>
+          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <div class="card-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <div class="card-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      
+      <div class="buttons">
+        <ul>
+          <li>Plotas</li>
+          <li>Kambarių skaičius</li>
+          <li>Langų orientacija</li>
+          <li>Baigtumas</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("#owl-example").owlCarousel({
+        itemsDesktop: [1499, 4],
+        itemsDesktopSmall: [1199, 3],
+        itemsTablet: [899, 2],
+        itemsMobile: [599, 1],
+        navigation: true,
+        navigationText: ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>',
+          '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'
+        ],
+      });
+
+    });
+  </script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    // Menu-toggle button
+    $.noConflict();
+    $(document).ready(function() {
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+      });
+    });
+  </script>
+
+
+</body>
+
 </html>

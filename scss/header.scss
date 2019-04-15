@@ -1,0 +1,128 @@
+@font-face {
+font-family: "Montserrat-Medium";
+src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+font-family: "Quicksand-Bold";
+src: url("../fonts/Quicksand/Quicksand-Bold.ttf");
+}
+
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+
+      // background: linear-gradient(#E8F1FF, #FAFCFF);
+}
+
+header {
+      width: 100%;
+      height: 40px;
+      // background: url(hero.jpg) no-repeat 50% 50%;
+      // background-size: cover;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      font-family: "Quicksand-Bold";
+      line-height: 35px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #23231E;
+      font-weight: bold;
+      font-size: 22px;
+
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+      z-index: 5;
+}
+
+nav ul {
+      line-height: 35px;
+      list-style: none;
+      background: #FFFFFF;
+      overflow: hidden;
+      color: #30333C;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #FFFFFF;
+}
+
+nav ul li {
+      font-family: "Montserrat-Medium";
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #30333C;
+      font-size: 18px;
+}
+
+.menu-icon {
+      line-height: 35px;
+      width: 100%;
+      background: #FFFFFF;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #23231E;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #FFFFFF;
+      }
+
+      // nav.black ul {
+      //       background: #000;
+      // }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
