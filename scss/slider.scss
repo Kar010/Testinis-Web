@@ -17,6 +17,18 @@ src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
   text-align: center;
 
 }
+// .kiautas::after{
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     box-shadow: 0 0 30px black;
+//     z-index: -1;
+//
+// }
+
 .owl-carousel .owl-wrapper-outer {
   overflow: hidden;
   position: relative;
@@ -52,9 +64,20 @@ src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
 .owl-carousel .owl-item  {
 
   img.front-image{
+    -webkit-box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+    -moz-box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+    box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+    position: sticky;
+    z-index: 100;
 
   }
   .card-text{
+    -webkit-box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+    -moz-box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+    box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+    position: sticky;
+    z-index: 100;
+
     h2{
       margin: -3px auto;
       font-family:"Montserrat-SemiBold";

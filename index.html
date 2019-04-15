@@ -51,10 +51,11 @@
     <section class="background">
       <h1>Lorem ipsum dolor</br>sit amet conset</h1>
       <div class="box"></div>
+
       <div id="owl-example" class="owl-carousel">
 
         <div>
-          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <img class="front-image" src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
           <div class="card-text">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
@@ -62,7 +63,7 @@
         </div>
 
         <div>
-          <img class="front-image"src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <img class="front-image" src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
           <div class="card-text">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
@@ -70,7 +71,7 @@
         </div>
 
         <div>
-          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <img class="front-image" src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
           <div class="card-text">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
@@ -78,7 +79,7 @@
         </div>
 
         <div>
-          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <img class="front-image" src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
           <div class="card-text">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
@@ -87,7 +88,7 @@
 
 
         <div>
-          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <img class="front-image" src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
           <div class="card-text">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
@@ -95,7 +96,7 @@
         </div>
 
         <div>
-          <img src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
+          <img class="front-image" src="img/1.png" style="width:250px;height:250px;border-top-right-radius:100px;">
           <div class="card-text">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p><a href="#"><img class="arrow" src="img/arrow-pointing-to-right.svg" alt="arrow"></a>
@@ -105,14 +106,125 @@
     </section>
 
     <section class="table">
-      
-      <div class="buttons">
-        <ul>
-          <li>Plotas</li>
-          <li>Kambarių skaičius</li>
-          <li>Langų orientacija</li>
-          <li>Baigtumas</li>
-        </ul>
+      <div class="container">
+
+
+        <div class="buttons">
+
+          <button class="button" type="button1"><span>Plotas</span></button>
+          <button class="button" type="button2"><span>Kambarių skaičius</span></button>
+          <button class="button" type="button3"><span>Langų orientacija</span></button>
+          <button class="button" type="button4"><span>Baigtumas</span></button>
+
+        </div>
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row">
+              <th role="columnheader">Nuolaida</th>
+              <th role="columnheader">Namo nr.</th>
+              <th role="columnheader">Plotas m2</th>
+              <th role="columnheader">Kambarių skaičius</th>
+              <th role="columnheader">Langų orientacija</th>
+              <th role="columnheader">Baigtumas</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr class="active" role="row">
+              <td role="cell">-5%</td>
+              <td role="cell">2</td>
+              <td role="cell">50.17</td>
+              <td role="cell">3</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-5%</td>
+              <td role="cell">2</td>
+              <td role="cell">60.00</td>
+              <td role="cell">4</td>
+              <td role="cell">Rytai</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+            <tr class="active" role="row">
+              <td role="cell">-</td>
+              <td role="cell">1</td>
+              <td role="cell">30.00</td>
+              <td role="cell">4</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Statoma</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-10%</td>
+              <td role="cell">2</td>
+              <td role="cell">60.17</td>
+              <td role="cell">4</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+            <tr class="active" role="row">
+              <td role="cell">-5%</td>
+              <td role="cell">1</td>
+              <td role="cell">50.17</td>
+              <td role="cell">4</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-5%</td>
+              <td role="cell">2</td>
+              <td role="cell">50.17</td>
+              <td role="cell">4</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-</td>
+              <td role="cell">1</td>
+              <td role="cell">40.00</td>
+              <td role="cell">3</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Statoma</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-</td>
+              <td role="cell">1</td>
+              <td role="cell">30.00</td>
+              <td role="cell">3</td>
+              <td role="cell">Rytai</td>
+              <td role="cell">Statoma</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-</td>
+              <td role="cell">3</td>
+              <td role="cell">30.00</td>
+              <td role="cell">3</td>
+              <td role="cell">Rytai</td>
+              <td role="cell">Statoma</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-5%</td>
+              <td role="cell">1</td>
+              <td role="cell">50.17</td>
+              <td role="cell">3</td>
+              <td role="cell">Rytai</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+            <tr role="row">
+              <td role="cell">-5%</td>
+              <td role="cell">1</td>
+              <td role="cell">50.17</td>
+              <td role="cell">3</td>
+              <td role="cell">Pietūs</td>
+              <td role="cell">Pastatyta</td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+    <section class="news">
+      <h1>Naujienos</h1>
+      <div class="container">
+
+
       </div>
 
     </section>
