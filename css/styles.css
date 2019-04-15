@@ -280,3 +280,14 @@ tr.active {
       font-size: 15px; }
   button::after {
     bottom: 9px !important; } }
+
+section.news h1 {
+  margin-left: 5%;
+  font-size: 50px;
+  font-family: "Quicksand-bold"; }
+
+section.news .container {
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 50px 1px #bdbfdb;
+  -moz-box-shadow: 0px 0px 50px 1px #bdbfdb;
+  box-shadow: 0px 0px 50px 1px #bdbfdb; }
