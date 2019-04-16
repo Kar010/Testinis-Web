@@ -1,7 +1,9 @@
 section.contacts{
 
 .more{
-  box-shadow: 0px 10px 10px #44477C;
+  -webkit-box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+  -moz-box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
+  box-shadow: 0px 0px 50px 1px rgba(189,191,219,1);
   margin-top: 50px;
   margin-bottom: 30px;
   .left{
@@ -18,25 +20,43 @@ section.contacts{
       li{
         list-style-type: none;
         }
-    img{
-      border-radius: 100px;
-      width: 130px;
-      height: 130px;
-      margin-top: 35px;
+     img.one{
+         border-radius: 100px;
+         background-image: url(../img/contacts/agne.png);
+         width: 130px;
+         height: 130px;
+         margin-top: 35px;
       }
+      img.two{
+          border-radius: 100px;
+          background-image: url(../img/contacts/tomas.png);
+          width: 130px;
+          height: 130px;
+          margin-top: 35px;
+       }
+       img.three{
+           border-radius: 100px;
+           background-image: url(../img/contacts/kamile.png);
+          background-position: center;
+           width: 130px;
+           height: 130px;
+           margin-top: 35px;
+        }
     }
    }
   }
   .right{
   float: right;
+  width: 50%;
   .title-right{
-    width: 595px;
-    height: 140.9px;
-    margin-top: 75px;
+    // width: 595px;
+    // height: 140.9px;
+    // margin-top: 75px;
     h1{
       font-family: "Quicksand-bold", sans-serif;
       font-size: 50px;
       color: #6F88B1;
+      padding-left: 5%;
     }
   }
   }
@@ -49,30 +69,34 @@ section.contacts{
     margin-left: 240px;
     li{
       list-style-type: none;
-      margin-bottom: 90px;
+      margin-bottom: 120px;
       h5{
         color: #6F88B1;
         font-size: 18px;
-        font-family: "Quicksand-bold", sans-serif;
-        margin: 0;
+        font-family: "Montserrat-Medium";
+        margin: 0 ;
       }
       p{
         font-size: 14px;
         color:#70737C;
+        font-family: "Montserrat-Medium";
+        margin-bottom: -14px;
       }
     }
   }
 }
 form{
-  margin-top: 40px;
+  // margin-top: 40px;
+  margin: 0 auto;
+  padding-left: 5%;
   .form-group{
     input, textarea{
     border: none;
     border-bottom: 1px solid #afafb9;
-    width: 520px;
+    width: 80%;
     margin-bottom: 30px;
     height: 25px;
-    font-family: 'Montserrat-Medium', sans-serif;
+    font-family: 'Montserrat-Medium';
     color: #70737C;
     font-size: 16px;
     }
@@ -98,51 +122,41 @@ form{
     }
   }
 }
-@media screen and (max-width:1250px){
-  form{
-    margin-left: 50px;
-    margin-top: -60px;
+@media screen and (max-width:733px){
+.left-left{
+  ul{
+    padding-left: 0px;
   }
-  .texts {
-    ul {
-    margin-top: 140px;
-    margin-left: 150px;
-    }
-   }
-  .more{
-    .left{
-      .left-left{
-        margin-left: 0;
-      }
-    }
-    .right{
+}
+.texts ul {
+    margin-left: 30%!important;
+}
+}
+@media screen and (max-width: 920px) {
+section.contacts .more .left .left-left {
+margin-left: 0!important;
+}
+.texts ul {
+    margin-left: 39%;
+}
+}
+@media screen and (max-width: 630px) {
+  section.contacts .more .left {
       float: none;
-       .title-right{
-         margin-top: 820px;
-         margin-left: 50px;
-         h1{
-           font-size: 30px;
-         }
-       }
-    }
+      background-color: #E6F1FF;
+      width: 100%;
+      height: 90%;
   }
-  .more .left {
+  .left-left ul {
+    padding-left: 30%;
+}
+.texts ul{
+
+    padding-top: 30%;
+
+}
+section.contacts .more .right {
+  float: none;
     width: 100%;
 }
-}
-@media screen and (max-width: 770px) {
-  form{
-    margin-left: 50px;
-    margin-top: -60px;
-  }
-  .more .left {
-    width: 100%;
-  }
-  .right{
-    float: none;
-    .title-right{
-      margin-top: 820px;
-      margin-left: 50px;
-    }
-  }
 }

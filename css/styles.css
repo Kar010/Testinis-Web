@@ -295,8 +295,7 @@ section.news .container::after {
   position: absolute; }
 
 section.news .container {
-  background-color: #FFFFFF;
-  position: relative; }
+  background-color: #FFFFFF; }
   section.news .container .image-gallery .row {
     margin-left: 50px;
     margin-right: 50px; }
@@ -358,8 +357,9 @@ section.news .container {
   clear: both; }
 
 section.contacts .more {
-  -webkit-box-shadow: 0px 10px 10px #44477C;
-  box-shadow: 0px 10px 10px #44477C;
+  -webkit-box-shadow: 0px 0px 50px 1px #bdbfdb;
+  -moz-box-shadow: 0px 0px 50px 1px #bdbfdb;
+  box-shadow: 0px 0px 50px 1px #bdbfdb;
   margin-top: 50px;
   margin-bottom: 30px; }
   section.contacts .more .left {
@@ -374,46 +374,61 @@ section.contacts .more {
       margin-left: 74px; }
       section.contacts .more .left .left-left ul li {
         list-style-type: none; }
-      section.contacts .more .left .left-left ul img {
+      section.contacts .more .left .left-left ul img.one {
         border-radius: 100px;
+        background-image: url(../img/contacts/agne.png);
+        width: 130px;
+        height: 130px;
+        margin-top: 35px; }
+      section.contacts .more .left .left-left ul img.two {
+        border-radius: 100px;
+        background-image: url(../img/contacts/tomas.png);
+        width: 130px;
+        height: 130px;
+        margin-top: 35px; }
+      section.contacts .more .left .left-left ul img.three {
+        border-radius: 100px;
+        background-image: url(../img/contacts/kamile.png);
+        background-position: center;
         width: 130px;
         height: 130px;
         margin-top: 35px; }
   section.contacts .more .right {
-    float: right; }
-    section.contacts .more .right .title-right {
-      width: 595px;
-      height: 140.9px;
-      margin-top: 75px; }
-      section.contacts .more .right .title-right h1 {
-        font-family: "Quicksand-bold", sans-serif;
-        font-size: 50px;
-        color: #6F88B1; }
+    float: right;
+    width: 50%; }
+    section.contacts .more .right .title-right h1 {
+      font-family: "Quicksand-bold", sans-serif;
+      font-size: 50px;
+      color: #6F88B1;
+      padding-left: 5%; }
 
 .texts ul {
   margin-top: 140px;
   margin-left: 240px; }
   .texts ul li {
     list-style-type: none;
-    margin-bottom: 90px; }
+    margin-bottom: 120px; }
     .texts ul li h5 {
       color: #6F88B1;
       font-size: 18px;
-      font-family: "Quicksand-bold", sans-serif;
+      font-family: "Montserrat-Medium";
       margin: 0; }
     .texts ul li p {
       font-size: 14px;
-      color: #70737C; }
+      color: #70737C;
+      font-family: "Montserrat-Medium";
+      margin-bottom: -14px; }
 
 form {
-  margin-top: 40px; }
+  margin: 0 auto;
+  padding-left: 5%; }
   form .form-group input, form .form-group textarea {
     border: none;
     border-bottom: 1px solid #afafb9;
-    width: 520px;
+    width: 80%;
     margin-bottom: 30px;
     height: 25px;
-    font-family: 'Montserrat-Medium', sans-serif;
+    font-family: 'Montserrat-Medium';
     color: #70737C;
     font-size: 16px; }
   form button {
@@ -435,33 +450,68 @@ form {
       margin-left: 6px;
       margin-top: 5px; }
 
-@media screen and (max-width: 1250px) {
-  form {
-    margin-left: 50px;
-    margin-top: -60px; }
+@media screen and (max-width: 733px) {
+  .left-left ul {
+    padding-left: 0px; }
   .texts ul {
-    margin-top: 140px;
-    margin-left: 150px; }
-  .more .left .left-left {
-    margin-left: 0; }
-  .more .right {
-    float: none; }
-    .more .right .title-right {
-      margin-top: 820px;
-      margin-left: 50px; }
-      .more .right .title-right h1 {
-        font-size: 30px; }
-  .more .left {
+    margin-left: 30% !important; } }
+
+@media screen and (max-width: 920px) {
+  section.contacts .more .left .left-left {
+    margin-left: 0 !important; }
+  .texts ul {
+    margin-left: 39%; } }
+
+@media screen and (max-width: 630px) {
+  section.contacts .more .left {
+    float: none;
+    background-color: #E6F1FF;
+    width: 100%;
+    height: 90%; }
+  .left-left ul {
+    padding-left: 30%; }
+  .texts ul {
+    padding-top: 30%; }
+  section.contacts .more .right {
+    float: none;
     width: 100%; } }
 
-@media screen and (max-width: 770px) {
-  form {
-    margin-left: 50px;
-    margin-top: -60px; }
-  .more .left {
-    width: 100%; }
-  .right {
-    float: none; }
-    .right .title-right {
-      margin-top: 820px;
-      margin-left: 50px; } }
+footer {
+  margin-top: 5%;
+  background-color: #30333C;
+  height: 100%;
+  color: white; }
+  footer .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer .col-lg-3 {
+    float: left;
+    width: 25%;
+    margin-top: 30px; }
+    footer .col-lg-3 ul {
+      margin-left: 30px; }
+      footer .col-lg-3 ul li {
+        list-style-type: none;
+        font-size: 18px;
+        font-family: "Quicksand-bold", sans-serif;
+        padding-bottom: 10px; }
+        footer .col-lg-3 ul li i {
+          margin-right: 20px;
+          margin-top: 95px; }
+      footer .col-lg-3 ul .icon {
+        margin-left: 155px; }
+      footer .col-lg-3 ul .footer-title {
+        font-size: 22px; }
+
+@media screen and (max-width: 1250px) {
+  footer .col-lg-3 ul .icon {
+    margin-left: 0px; }
+  .icon {
+    margin-top: 150px; } }
+
+@media screen and (max-width: 540px) {
+  section.table {
+    margin-top: 25%; }
+  .icon {
+    margin-top: 150px; } }

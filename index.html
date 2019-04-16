@@ -7,6 +7,7 @@
   <meta name="keywords" content="HTML,CSS,JavaScript">
   <meta name="author" content="Karolis Mackevičius">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/styles.css">
 
@@ -228,22 +229,22 @@
         <div class="image-gallery">
           <div class="row">
             <div class="figure">
-              <a href="#"><img src="img\news\chris-barbalis-696423-unsplash.png" ></a>
+              <a href="#"><img src="img\news\chris-barbalis-696423-unsplash.png"></a>
             </div>
             <div class="figure">
-              <a href="#"><img src="img\news\daniil-silantev-574966-unsplash.png" ></a>
+              <a href="#"><img src="img\news\daniil-silantev-574966-unsplash.png"></a>
             </div>
             <div class="figure">
-              <a href="#"><img src="img\news\jason-briscoe-332508-unsplash.png" ></a>
+              <a href="#"><img src="img\news\jason-briscoe-332508-unsplash.png"></a>
             </div>
             <div class="figure">
-              <a href="#"><img src="img\news\matthew-hamilton-166549-unsplash.png" ></a>
+              <a href="#"><img src="img\news\matthew-hamilton-166549-unsplash.png"></a>
             </div>
             <div class="figure">
-              <a href="#"><img src="img\news\roberto-nickson-661462-unsplash.png" ></a>
+              <a href="#"><img src="img\news\roberto-nickson-661462-unsplash.png"></a>
             </div>
             <div class="figure">
-              <a href="#"><img src="img\news\caleb-jones-135058-unsplash.png" ></a>
+              <a href="#"><img src="img\news\caleb-jones-135058-unsplash.png"></a>
             </div>
           </div>
         </div>
@@ -253,76 +254,117 @@
     <section class="contacts">
 
 
-          <div class="more">
-            <div class="container clearfix">
-              <div class="left">
-                <div class="left-left">
-                  <ul>
-                    <li><img src="img/13.png" alt=""></li>
-                    <li><img src="img/14.png" alt=""></li>
-                    <li><img src="img/15.png" alt=""></li>
-                  </ul>
+      <div class="more">
+        <div class="container clearfix">
+          <div class="left">
+            <div class="left-left">
+              <ul>
+                <li><img class="one"></li>
+                <li><img class="two"></li>
+                <li><img class="three"></li>
+              </ul>
 
-                </div>
-
-                <div class="texts">
-                 <ul>
-                  <li><h5>Agnė Valentinaitė</h5><p>agne@ntprojects.com</p><p>+370 62553454</p></li>
-                  <li><h5>Kamilė Henderson</h5><p>kamile@ntprojects.com</p><p>+370 64567893</p></li>
-                  <li><h5>Tomas Petkevičius</h5><p>tomas@ntprojects.com</p><p>+370 60567843</p></li>
-                 </ul>
-
-
-                </div>
-              </div>
-              <div class="right">
-                <div class="title-right">
-                  <h1>Sužinok apie projektą daugiau</h1>
-                </div>
-                <form>
-
-                 <div class="form-group">
-
-                   <input type="text" class="form-control" id="contact-name" name="name" placeholder="Jūsų vardas" onkeyup='validateName()'>
-                   <br>
-                   <span class='error-message' id='name-error'></span>
-                   <br><br>
-                 </div>
-
-                 <div class="form-group">
-                   
-                   <input type="email" class="form-control" id="contact-email" name="email" placeholder="El. paštas" onkeyup='validateEmail()'>
-                   <br>
-                   <span class='error-message' id='email-error'></span>
-                   <br><br>
-                 </div>
-
-                 <div class="form-group">
-
-                   <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Telefono numeris" onkeyup='validatePhone()'>
-                   <br>
-                   <span class='error-message' id='phone-error'></span>
-                   <br><br>
-                 </div>
-
-                 <div class="form-group">
-
-                   <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Žinutė" onkeyup='validateMessage()'></textarea>
-                   <br>
-                   <span class='error-message' id='message-error'></span>
-                   <br><br><br>
-                 </div>
-
-               <button onclick='return validateForm()' class="btn btn-default">Siųsti<img src="img/11.png" alt=""></button>
-               <span class='error-message' id='submit-error'></span>
-             </form>
-              </div>
-
-             </div>
             </div>
 
+            <div class="texts">
+              <ul>
+                <li>
+                  <h5>Agnė Valentinaitė</h5>
+                  <p>agne@ntprojects.com</p>
+                  <p>+370 62553454</p>
+                </li>
+                <li>
+                  <h5>Kamilė Henderson</h5>
+                  <p>kamile@ntprojects.com</p>
+                  <p>+370 64567893</p>
+                </li>
+                <li>
+                  <h5>Tomas Petkevičius</h5>
+                  <p>tomas@ntprojects.com</p>
+                  <p>+370 60567843</p>
+                </li>
+              </ul>
 
+
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="title-right">
+              <h1>Sužinok apie projektą daugiau</h1>
+            </div>
+            <form>
+
+              <div class="form-group">
+
+                <input type="text" class="form-control" id="contact-name" name="name" placeholder="Jūsų vardas" onkeyup='validateName()'>
+                <br>
+                <span class='error-message' id='name-error'></span>
+                <br><br>
+              </div>
+
+              <div class="form-group">
+
+                <input type="email" class="form-control" id="contact-email" name="email" placeholder="El. paštas" onkeyup='validateEmail()'>
+                <br>
+                <span class='error-message' id='email-error'></span>
+                <br><br>
+              </div>
+
+              <div class="form-group">
+
+                <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Telefono numeris" onkeyup='validatePhone()'>
+                <br>
+                <span class='error-message' id='phone-error'></span>
+                <br><br>
+              </div>
+
+              <div class="form-group">
+
+                <textarea class="form-control" rows="5" id='contact-message' name='message' placeholder="Žinutė" onkeyup='validateMessage()'></textarea>
+                <br>
+                <span class='error-message' id='message-error'></span>
+                <br><br><br>
+              </div>
+
+              <button onclick='return validateForm()' class="btn btn-default">Siųsti<img src="img/11.png" alt=""></button>
+              <span class='error-message' id='submit-error'></span>
+            </form>
+          </div>
+
+        </div>
+      </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <ul>
+              <li class="footer-title">Apie statytoją</li>
+              <li>Lorem ipsum</li>
+              <li>dolor sit amet</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 ">
+            <ul>
+              <li class="footer-title">Saugumas</li>
+              <li>consectetur adipisicing</li>
+              <li>Sed do eiusmod</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3">
+            <ul>
+              <li class="icon"><i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
 
   </main>
 
@@ -359,7 +401,116 @@
       });
     });
   </script>
+  <script>
+  function validateName() {
 
+    var name = document.getElementById('contact-name').value;
+
+    if(name.length == 0) {
+
+      producePrompt('Vardas yra privalomas', 'name-error' , 'red')
+      return false;
+
+    }
+
+    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+      producePrompt('Įveskite vardą ir pavardę','name-error', 'red');
+      return false;
+
+    }
+
+    producePrompt('Validuota', 'name-error', 'green');
+    return true;
+
+  }
+
+  function validatePhone() {
+
+    var phone = document.getElementById('contact-phone').value;
+
+      if(phone.length == 0) {
+        producePrompt('Telefono numeris yra privalomas', 'phone-error', 'red');
+        return false;
+      }
+
+      if(phone.length != 10) {
+        producePrompt('Įveskite vietovės kodą', 'phone-error', 'red');
+        return false;
+      }
+
+      if(!phone.match(/^[0-9]{10}$/)) {
+        producePrompt('Įveskite tik skaičius' ,'phone-error', 'red');
+        return false;
+      }
+
+      producePrompt('Validuota', 'phone-error', 'green');
+      return true;
+
+  }
+
+  function validateEmail () {
+
+    var email = document.getElementById('contact-email').value;
+
+    if(email.length == 0) {
+
+      producePrompt('Netinkamas Email','email-error', 'red');
+      return false;
+
+    }
+
+    if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+      producePrompt('Netinkamas Email', 'email-error', 'red');
+      return false;
+
+    }
+
+    producePrompt('Validuota', 'email-error', 'green');
+    return true;
+
+  }
+
+  function validateMessage() {
+    var message = document.getElementById('contact-message').value;
+    var required = 30;
+    var left = required - message.length;
+
+    if (left > 0) {
+      producePrompt(left + ' raidžių trūksta validacijai','message-error','red');
+      return false;
+    }
+
+    producePrompt('Validuota', 'message-error', 'green');
+    return true;
+
+  }
+
+  function validateForm() {
+      if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+          jsShow('submit-error');
+          producePrompt('Užpildykite tusčius langelius!', 'submit-error', 'red');
+          setTimeout(function(){jsHide('submit-error');}, 2000);
+          return false;
+      }
+  }
+
+  function jsShow(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function jsHide(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  function producePrompt(message, promptLocation, color) {
+
+    document.getElementById(promptLocation).innerHTML = message;
+    document.getElementById(promptLocation).style.color = color;
+  }
+
+  </script>
 
 </body>
 
