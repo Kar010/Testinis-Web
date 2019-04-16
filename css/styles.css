@@ -283,11 +283,56 @@ tr.active {
 
 section.news h1 {
   margin-left: 5%;
+  margin-top: 5%;
   font-size: 50px;
   font-family: "Quicksand-bold"; }
 
 section.news .container {
-  margin: 0 auto;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 50px 1px #bdbfdb;
   -moz-box-shadow: 0px 0px 50px 1px #bdbfdb;
-  box-shadow: 0px 0px 50px 1px #bdbfdb; }
+  box-shadow: 0px 0px 50px 1px #bdbfdb;
+  position: absolute; }
+  section.news .container .image-gallery .row {
+    margin-left: 50px;
+    margin-right: 50px; }
+  section.news .container .image-gallery .figure::before {
+    content: "Lorem ipsum dolor sit \A amet";
+    width: 270px;
+    font-family: "Quicksand-Bold";
+    padding-left: 15px;
+    position: relative;
+    color: white;
+    font-size: 26px;
+    top: 305px;
+    margin-top: -75px;
+    white-space: pre;
+    text-align: left; }
+  section.news .container .image-gallery .figure::after {
+    display: block;
+    position: relative;
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: ''; }
+  section.news .container .image-gallery .figure {
+    float: left;
+    width: 380px;
+    height: 380px;
+    text-align: center;
+    overflow: hidden;
+    margin: 10px; }
+    section.news .container .image-gallery .figure img {
+      height: auto;
+      display: block;
+      width: auto;
+      min-width: 380px;
+      min-height: 380px;
+      background-position: left; }
+    section.news .container .image-gallery .figure p {
+      width: 270px;
+      font-family: "Quicksand-Bold", sans-serif;
+      padding-left: 15px;
+      color: white;
+      font-size: 26px;
+      margin-top: -75px; }
