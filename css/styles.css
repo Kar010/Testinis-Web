@@ -284,15 +284,19 @@ tr.active {
 section.news h1 {
   margin-left: 5%;
   margin-top: 5%;
+  margin-bottom: 5%;
   font-size: 50px;
   font-family: "Quicksand-bold"; }
 
-section.news .container {
-  background-color: #FFFFFF;
+section.news .container::after {
   -webkit-box-shadow: 0px 0px 50px 1px #bdbfdb;
   -moz-box-shadow: 0px 0px 50px 1px #bdbfdb;
   box-shadow: 0px 0px 50px 1px #bdbfdb;
   position: absolute; }
+
+section.news .container {
+  background-color: #FFFFFF;
+  position: relative; }
   section.news .container .image-gallery .row {
     margin-left: 50px;
     margin-right: 50px; }
@@ -336,3 +340,128 @@ section.news .container {
       color: white;
       font-size: 26px;
       margin-top: -75px; }
+
+.clearfix::after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.clearfix::before {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+section.contacts .more {
+  -webkit-box-shadow: 0px 10px 10px #44477C;
+  box-shadow: 0px 10px 10px #44477C;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  section.contacts .more .left {
+    float: left;
+    background-color: #E6F1FF;
+    width: 50%;
+    height: 770px; }
+    section.contacts .more .left .left-left {
+      float: left;
+      margin-top: 70px;
+      margin-bottom: 33px;
+      margin-left: 74px; }
+      section.contacts .more .left .left-left ul li {
+        list-style-type: none; }
+      section.contacts .more .left .left-left ul img {
+        border-radius: 100px;
+        width: 130px;
+        height: 130px;
+        margin-top: 35px; }
+  section.contacts .more .right {
+    float: right; }
+    section.contacts .more .right .title-right {
+      width: 595px;
+      height: 140.9px;
+      margin-top: 75px; }
+      section.contacts .more .right .title-right h1 {
+        font-family: "Quicksand-bold", sans-serif;
+        font-size: 50px;
+        color: #6F88B1; }
+
+.texts ul {
+  margin-top: 140px;
+  margin-left: 240px; }
+  .texts ul li {
+    list-style-type: none;
+    margin-bottom: 90px; }
+    .texts ul li h5 {
+      color: #6F88B1;
+      font-size: 18px;
+      font-family: "Quicksand-bold", sans-serif;
+      margin: 0; }
+    .texts ul li p {
+      font-size: 14px;
+      color: #70737C; }
+
+form {
+  margin-top: 40px; }
+  form .form-group input, form .form-group textarea {
+    border: none;
+    border-bottom: 1px solid #afafb9;
+    width: 520px;
+    margin-bottom: 30px;
+    height: 25px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: #70737C;
+    font-size: 16px; }
+  form button {
+    background-color: #D9DBE2;
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: -20px;
+    margin-bottom: 20px; }
+    form button img {
+      width: 20px;
+      height: 12px;
+      margin-left: 6px;
+      margin-top: 5px; }
+
+@media screen and (max-width: 1250px) {
+  form {
+    margin-left: 50px;
+    margin-top: -60px; }
+  .texts ul {
+    margin-top: 140px;
+    margin-left: 150px; }
+  .more .left .left-left {
+    margin-left: 0; }
+  .more .right {
+    float: none; }
+    .more .right .title-right {
+      margin-top: 820px;
+      margin-left: 50px; }
+      .more .right .title-right h1 {
+        font-size: 30px; }
+  .more .left {
+    width: 100%; } }
+
+@media screen and (max-width: 770px) {
+  form {
+    margin-left: 50px;
+    margin-top: -60px; }
+  .more .left {
+    width: 100%; }
+  .right {
+    float: none; }
+    .right .title-right {
+      margin-top: 820px;
+      margin-left: 50px; } }
